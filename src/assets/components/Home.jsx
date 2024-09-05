@@ -2,18 +2,27 @@ import "./Home.css";
 
 
 function Home() {
+    const genreOfGames = [
+        'Shooting', 'MultiPlayer', 'Combat', 'Brain Storm',
+        'Driving', 'Family', 'Farm and Forest','Horror', 
+    ]
     return (
         <>
             <header>
                 <nav>
                 <img src="/vite.svg" alt="vite-logo" />
-                <a href="#">Family</a>
-                <a href="#">Games</a>
-                <a href="#">Friends</a>   
-                <a href="#more-info">More Info</a>
+                <h4>Games</h4>
+                <button>Mode</button>
                 </nav>
 
             </header>
+            <aside id="Side-nav">
+               <ul id="list-items">
+                {genreOfGames.map((game, index) => {
+                    return <li key={index}>{game}</li>
+                })}
+               </ul>
+            </aside>
         </>
     )
 }

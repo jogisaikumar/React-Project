@@ -1,7 +1,63 @@
 header {
-    justify-content: space-between;
+  display: block;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
 }
 
-img{
-    margin-right: 5rem;
+body {
+  margin: 0;
 }
+nav {
+  background-color: rgb(230, 216, 216);
+  color: rgb(114, 70, 5);
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+img {
+  display: flex;
+  margin: 0.5rem;
+  height: 2.5rem;
+  background-color: rgb(70, 70, 8);
+  border: 1px solid #d9cfcf;
+  border-radius: 40%;
+}
+
+button {
+    display: flex;
+    color:rgb(70, 70, 8);
+    width:5rem;
+    height: 2rem;
+    align-items: center;
+    background-color: azure;
+    border-radius: 4px;
+    margin: 0;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height:90vh;
+    width: 10rem;
+    box-shadow: 4px 2px 8px rgba(241, 53, 24, 0.26);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    color: rgb(40, 37, 37);
+    
+}
+
+li {
+    font-size: medium;
+}
+
+

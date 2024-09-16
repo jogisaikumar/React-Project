@@ -1,17 +1,58 @@
+/* Light mode styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode nav {
+  background-color: rgb(230, 216, 216);
+}
+
+.light-mode .btn-mode {
+  background-color: azure;
+  color: black;
+}
+
+.light-mode aside ul {
+  background-color: rgba(241, 53, 24, 0.26);
+  color: rgb(40, 37, 37);
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: rgb(52, 31, 31);
+  color: white;
+}
+
+.dark-mode nav {
+  background-color: rgb(50, 50, 50);
+}
+
+.dark-mode .btn-mode {
+  background-color: gray;
+  color: white;
+}
+
+.dark-mode aside ul {
+  background-color: rgba(100, 100, 100, 0.8);
+  color: white;
+}
+
 header {
   display: block;
   align-items: center;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin:1rem, 0;
+  margin: 1rem, 0;
 }
 nav {
   background-color: rgb(230, 216, 216);
@@ -59,7 +100,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: bisque;
+  background-color: rgba(241, 53, 24, 0.26);
   color: rgb(40, 37, 37);
 }
 
@@ -73,8 +114,17 @@ footer {
   left: 0;
   width: 100%;
   height: 10vh;
-  background-color: rgb(186, 143, 143);
+  background-color: rgb(230, 216, 216);
   color: rgb(40, 37, 37);
   display: flex;
   justify-content: center;
+}
+
+.dark-mode footer {
+  background-color: rgb(50, 50, 50);
+  color: rgb(230, 216, 216);
+}
+
+.dark-mode h4 {
+  color: white;
 }
